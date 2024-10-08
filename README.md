@@ -47,6 +47,40 @@ Este é um projeto de API para gerenciar uma biblioteca de livros.
 
 7. **Acesse a API em `http://localhost:8000/`**
 
+## Endpoints
+
+### Categorias
+Operações disponíveis:
+- GET /api/categorias/ - Lista todas as categorias
+- POST /api/categorias/ - Cria uma nova categoria
+- GET /api/categorias/{id}/ - Mostra detalhes de uma categoria
+- PUT /api/categorias/{id}/ - Atualiza uma categoria
+- DELETE /api/categorias/{id}/ - Deleta uma categoria
+
+- Body para POST e PUT
+```json
+    {
+        "id": 1,
+        "nome": "Nome da Categoria"
+    }
+```
+
+### Autores
+Operações disponíveis:
+- GET /api/autores/ - Lista todos os autores
+- POST /api/autores/ - Cria um novo autor
+- GET /api/autores/{id}/ - Mostra detalhes de um autor
+- PUT /api/autores/{id}/ - Atualiza um autor
+- DELETE /api/autores/{id}/ - Deleta um autor
+
+- Body para POST e PUT
+```json
+    {
+        "id": 1,
+        "nome": "Nome do Autor"
+    }
+```
+
 Operaçoes disponíveis:	
 - GET /api/livros/ - Lista todos os livros
 - POST /api/livros/ - Cria um novo livro
@@ -54,7 +88,7 @@ Operaçoes disponíveis:
 - PUT /api/livros/{id}/ - Atualiza um livro
 - DELETE /api/livros/{id}/ - Deleta um livro
 
-# Body para POST e PUT
+### Body para POST e PUT
 ```json
     {
         "id": 1,
@@ -64,5 +98,4 @@ Operaçoes disponíveis:
         "publicado_em": "1951-06-01"
     }
 ```
-- Os múdulos de autor e categoria ainda não possuem operações de CRUD, então é necessário criar manualmente no banco de dados.
 
