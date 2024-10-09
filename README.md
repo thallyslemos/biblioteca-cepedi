@@ -52,6 +52,8 @@ Este é um projeto de API para gerenciar uma biblioteca de livros.
 ### Categorias
 Operações disponíveis:
 - GET /api/categorias/ - Lista todas as categorias
+    - Filtros disponíveis:
+        - `/api/categorias/?nome=x` - Filtra por nome
 - POST /api/categorias/ - Cria uma nova categoria
 - GET /api/categorias/{id}/ - Mostra detalhes de uma categoria
 - PUT /api/categorias/{id}/ - Atualiza uma categoria
@@ -68,6 +70,8 @@ Operações disponíveis:
 ### Autores
 Operações disponíveis:
 - GET /api/autores/ - Lista todos os autores
+    - Filtros disponíveis:
+        - `/api/autores/?nome=x` - Filtra por nome
 - POST /api/autores/ - Cria um novo autor
 - GET /api/autores/{id}/ - Mostra detalhes de um autor
 - PUT /api/autores/{id}/ - Atualiza um autor
@@ -83,6 +87,11 @@ Operações disponíveis:
 
 Operaçoes disponíveis:	
 - GET /api/livros/ - Lista todos os livros
+    - Filtros disponíveis:
+        - `/api/livros/?titulo=x` - Filtra por título
+        - `/api/livros/?autor=x` - Filtra por nome do autor
+        - `/api/livros/?categoria=x` - Filtra por nome da categoria
+        - `/api/livros/?publicado_em=x` - Filtra por data de publicação
 - POST /api/livros/ - Cria um novo livro
 - GET /api/livros/{id}/ - Mostra detalhes de um livro
 - PUT /api/livros/{id}/ - Atualiza um livro
