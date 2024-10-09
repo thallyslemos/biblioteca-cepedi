@@ -45,7 +45,13 @@ Este é um projeto de API para gerenciar uma biblioteca de livros.
     python3 manage.py runserver
     ````
 
-7. **Acesse a API em `http://localhost:8000/`**
+7. **Popular o banco de dados com dados iniciais definidos em `core/management/commands/populate_db.py`:**
+
+    ```bash
+    python3 manage.py populate_db
+    ````
+
+8. **Acesse a API em `http://localhost:8000/`**
 
 ## Endpoints
 
